@@ -1,0 +1,45 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, rgb(0, 157, 255), rgb(0, 225, 255));
+    }
+
+.button-container {
+    border: 1px solid #002740;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+    box-shadow: inset 0 20px 6px -17px rgba(217, 241, 252, 0.7);
+}
+
+button {
+    cursor: pointer;
+    outline: none; /*get rid of default blue outline when pressed*/
+    width: 7.5rem;
+    height: 4rem;
+    font-family:;
+    font-size: 1.5rem;
+    color:rgb(0, 39, 64);;
+    text-shadow: 0 2px 5px rgb(0, 157, 255);
+    background: linear-gradient(to bottom left, rgb(0, 157, 255), rgb(0, 225, 255));
+    border: 2px solid rgb(0, 39, 64);
+    border-radius: 0.2rem;
+    box-shadow: inset 0 20px 6px -17px rgba(217, 241, 252, 0.5), 0 12px 12px 0 rgba(0, 39, 64, 0.3);
+}
+
+button:hover {
+    background: linear-gradient(to top right, rgb(0, 157, 255), rgb(0, 225, 255));
+    /* swap gradients around to give impression of button being depressed */
+}
+
+button:active {
+    transform: translateY(3px); /*move on Y axis 3px down*/
+    box-shadow:  0 6px 6px 0 rgba(0, 39, 64, 0.3);
+    /* copy box shadow, but half attributes to give impression of pressing down */
+}
